@@ -1,10 +1,15 @@
 package FromLecture;
 
-import com.codeborne.selenide.AuthenticationType;
-import com.codeborne.selenide.BasicAuthCredentials;
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.*;
+import org.openqa.selenium.Keys;
 
-import static com.codeborne.selenide.Condition.attribute;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.time.Duration;
+
+import static com.codeborne.selenide.CollectionCondition.*;
+import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.empty;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -45,7 +50,7 @@ public class Snippets {
         $(byXpath("//h1/div")).click();
 
         $(byText("full text")).click(); //ищет по полному совпадению
-        $(withText("ull tex")).click(); //ижет по половине строки
+        $(withText("ull tex")).click(); //ищет по половине строки
 
         $(byTagAndText("div","full text"));
         $(withTagAndText("div","ull text"));
@@ -57,7 +62,8 @@ public class Snippets {
         $("").ancestor("div"); // the same as closest - ищет первого предка вверх по дереву используя любой селектор
         $("div:last-child");
 
-        $("div").$("h1").find(byText("abc")).click();
+        $("div").$("h1").find(byText("abc")).click(); //ищем сначала первый div, внутри него
+        //мы ищем первый h1, и внутри него ищем find by text или любые другие комбинации
 
         // very optional
         $(byAttribute("abc", "x")).click();
@@ -73,19 +79,19 @@ public class Snippets {
     void actions_examples() {
         $("").click();
         $("").doubleClick();
-        $("").contextClick();
+        $("").contextClick(); //то же самое что и right click
 
         $("").hover();
 
-        $("").setValue("text");
-        $("").append("text");
+        $("").setValue("text"); //полностью очищает поле и записывает данные
+        $("").append("text"); // не очищает поле и добавляет к нему текст
         $("").clear();
         $("").setValue(""); // clear
 
         $("div").sendKeys("c"); // hotkey c on element
-        actions().sendKeys("c").perform(); //hotkey c on whole application
-        actions().sendKeys(Key s.chord(Keys.CONTROL, "f")).perform(); // Ctrl + F
-        $("html").sendKeys(Keys.chord(Keys.CONTROL, "f"));
+        actions().sendKeys("c").perform(); //hotkey c on whole application - вызывает последовательность нажатия клавиш
+        actions().sendKeys(Keys.chord(Keys.CONTROL, "f")).perform(); // Ctrl + F
+        $("html").sendKeys(Keys.chord(Keys.CONTROL, "f")); //chord - это значит одновременно нажать на control и f
 
         $("").pressEnter();
         $("").pressEscape();
@@ -94,14 +100,16 @@ public class Snippets {
 
         // complex actions with keybord and mouse, example
         actions().moveToElement($("div")).clickAndHold().moveByOffset(300, 200).release().perform();
+        //moveByOffset - передвинуть мышку на 300 точек вверх и вниз
 
         // old html actions don't work with many modern frameworks
-        $("").selectOption("dropdown_option");
+        $("").selectOption("dropdown_option"); // работает только с классичискими drop downs
         $("").selectRadio("radio_options");
+        //для работы с современными dropdowns - сначала нужно кликнуть на элемент, а потом уже выбирать элементы внутри списка
 
     }
 
-    void assertions_examples() {
+    void assertions_examples() {            //все эти элеменеты одинаковые
         $("").shouldBe(visible);
         $("").shouldNotBe(visible);
         $("").shouldHave(text("abc"));
