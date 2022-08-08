@@ -119,25 +119,25 @@ public class Snippets {
 
 
         //longer timeouts
-        $("").shouldBe(visible, Duration.ofSeconds(30));
+        $("").shouldBe(visible, Duration.ofSeconds(30)); //увеличивает стандартный таймаут
 
 
     }
 
     void conditions_examples() {
-        $("").shouldBe(visible);
+        $("").shouldBe(visible);      //эти 3 проверки составляют 90% всех проверок в селениде
         $("").shouldBe(hidden);
+        $("").shouldHave(text("abc")); //игнорирует case и ищет не по полному совпадению
 
-        $("").shouldHave(text("abc"));
         $("").shouldHave(exactText("abc"));
         $("").shouldHave(textCaseSensitive("abc"));
         $("").shouldHave(exactTextCaseSensitive("abc"));
-        $("").should(matchText("[0-9]abc$"));
+        $("").should(matchText("[0-9]abc$"));  //можно выдумать любую проверку
 
-        $("").shouldHave(cssClass("red"));
-        $("").shouldHave(cssValue("font-size", "12"));
+        $("").shouldHave(cssClass("red")); //проверяет только класс
+        $("").shouldHave(cssValue("font-size", "12")); //можно проверить размер самого элемента
 
-        $("").shouldHave(value("25"));
+        $("").shouldHave(value("25")); //проверяем значение полей для ввода
         $("").shouldHave(exactValue("25"));
         $("").shouldBe(empty);
 
@@ -148,10 +148,10 @@ public class Snippets {
         $("").shouldBe(checked); // for checkboxes
 
         // Warning! Only checks if it is in DOM, not if it is visible! You don't need it in most tests!
-        $("").should(exist);
+        $("").should(exist); //проверяет что элемент находися в DOM
 
         // Warning! Checks only the "disabled" attribute! Will not work with many modern frameworks
-        $("").shouldBe(disabled);
+        $("").shouldBe(disabled); //проверяет только атрибут disable, а не фактически disable
         $("").shouldBe(enabled);
     }
 
@@ -161,27 +161,26 @@ public class Snippets {
 
         // selections
         $$("div").filterBy(text("123")).shouldHave(size(1));
-        $$("div").excludeWith(text("123")).shouldHave(size(1));
+        $$("div").excludeWith(text("123")).shouldHave(size(1)); //удваляютяс все элементы для которых этот condition верный
 
         $$("div").first().click();
-        elements("div").first().click();
-        // $("div").click();
+        elements("div").first().click(); // $("div").click() - то же самое
         $$("div").last().click();
         $$("div").get(1).click(); // the second! (start with 0)
         $("div", 1).click(); // same as previous
-        $$("div").findBy(text("123")).click(); //  finds first
+        $$("div").findBy(text("123")).click(); //  finds first - тоже самое что filter + first
 
         // assertions
-        $$("").shouldHave(size(0));
+        $$("").shouldHave(size(0)); //проверка на размер коллекции
         $$("").shouldBe(CollectionCondition.empty); // the same
 
-        $$("").shouldHave(texts("Alfa", "Beta", "Gamma"));
+        $$("").shouldHave(texts("Alfa", "Beta", "Gamma")); //тексты должны быть ровно 3 и ровно в этом порядке на не полное соответствие
         $$("").shouldHave(exactTexts("Alfa", "Beta", "Gamma"));
 
-        $$("").shouldHave(textsInAnyOrder("Beta", "Gamma", "Alfa"));
+        $$("").shouldHave(textsInAnyOrder("Beta", "Gamma", "Alfa")); //вне зависимоти от порядка, но кол-во элементов должно совпадать
         $$("").shouldHave(exactTextsCaseSensitiveInAnyOrder("Beta", "Gamma", "Alfa"));
 
-        $$("").shouldHave(itemWithText("Gamma")); // only one text
+        $$("").shouldHave(itemWithText("Gamma")); // only one text - ищет только этот текст в коллекции
 
         $$("").shouldHave(sizeGreaterThan(0));
         $$("").shouldHave(sizeGreaterThanOrEqual(1));
@@ -198,7 +197,7 @@ public class Snippets {
 
         File file = new File("src/test/resources/readme.txt");
         $("#file-upload").uploadFile(file);
-        $("#file-upload").uploadFromClasspath("readme.txt");
+        $("#file-upload").uploadFromClasspath("readme.txt"); // нужно нажать потом на submit
         // don't forget to submit!
         $("uploadButton").click();
     }
