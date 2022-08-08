@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added workplace">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FromLecture/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FromLecture/Snippets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +47,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="FromLecture" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Faker">
+    <configuration name="Faker1$Faker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Experiments.Faker1$Faker" />
+      <module name="SelenideSpecial.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Experiments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Faker" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;Experiments.Faker1$Faker&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;Experiments.Faker&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -102,6 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Faker" />
+        <item itemvalue="Application.Faker1$Faker" />
         <item itemvalue="Gradle.Faker" />
         <item itemvalue="Gradle.Faker.firstExperiment (1)" />
       </list>
@@ -150,6 +166,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
