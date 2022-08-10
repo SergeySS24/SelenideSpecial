@@ -1,0 +1,335 @@
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'java'\r\n}\r\n\r\ngroup 'com_junit5_03_07_22'\r\nversion '1.0-SNAPSHOT'\r\n\r\nrepositories {\r\n    mavenCentral()\r\n}\r\n\r\ncompileJava {\r\n    options.encoding = 'UTF-8'\r\n}\r\ncompileTestJava {\r\n    options.encoding = 'UTF-8'\r\n}\r\n\r\ndependencies {\r\n    testImplementation (\r\n            'org.junit.jupiter:junit-jupiter:5.8.2',\r\n            'com.codeborne:selenide:6.4.0',\r\n            'com.github.javafaker:javafaker:1.0.2'\r\n    )\r\n}\r\n\r\ntasks.withType(JavaCompile) {\r\n    options.encoding = 'UTF-8'\r\n}\r\n\r\ntest {\r\n    useJUnitPlatform()\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision 80725b995e00d49a6ed8d493a6f3e54c1d01377d)
++++ b/build.gradle	(date 1660080719763)
+@@ -19,8 +19,9 @@
+ dependencies {
+     testImplementation (
+             'org.junit.jupiter:junit-jupiter:5.8.2',
+-            'com.codeborne:selenide:6.4.0',
+-            'com.github.javafaker:javafaker:1.0.2'
++            'com.codeborne:selenide:6.3.5',
++            'com.github.javafaker:javafaker:1.0.2',
++            "org.slf4j:slf4j-simple:1.7.36"
+     )
+ }
+ 
+Index: src/test/java/MyCode/ff.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/MyCode/ff.java b/src/test/java/MyCode/ff.java
+new file mode 100644
+--- /dev/null	(date 1660079534483)
++++ b/src/test/java/MyCode/ff.java	(date 1660079534483)
+@@ -0,0 +1,29 @@
++package MyCode;
++
++import com.codeborne.selenide.Configuration;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.Test;
++
++import static com.codeborne.selenide.Selenide.$;
++import static com.codeborne.selenide.Selenide.open;
++
++public class ff {
++
++    @BeforeAll
++    static void setUp() {
++        Configuration.baseUrl = "https://demoqa.com";
++        Configuration.browserSize = "1920x1020";
++        Configuration.holdBrowserOpen = true;
++    }
++
++    @Test
++    void FillFormTest() {
++
++        open("/automation-practice-form");
++
++        //Name, Last name, Email
++        $("[id=firstName]").setValue("Sergey");
++        $("[id=lastName]").setValue("Starostin");
++        $("[id=userEmail]").setValue("sergey@example.com");
++    }
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7f6aa82f-7325-4c15-9b7c-15212b42cead\" name=\"Changes\" comment=\"Added all\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view />\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2CuNCrPn6xBGfG4oPjVXj2AjbdS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"FromLecture\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.Faker1\">\r\n    <configuration name=\"Faker1$Faker\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Experiments.Faker1$Faker\" />\r\n      <module name=\"SelenideSpecial.test\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Experiments.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Faker1\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Experiments.Faker1\" />\r\n      <module name=\"SelenideSpecial.test\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Experiments.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Faker\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"--tests &quot;Experiments.Faker1$Faker&quot;\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":test\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Faker.firstExperiment (1)\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":test\" />\r\n            <option value=\"--tests\" />\r\n            <option value=\"&quot;Experiments.Faker.firstExperiment&quot;\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Faker1\" />\r\n        <item itemvalue=\"Gradle.Faker\" />\r\n        <item itemvalue=\"Application.Faker1$Faker\" />\r\n        <item itemvalue=\"Gradle.Faker\" />\r\n        <item itemvalue=\"Gradle.Faker.firstExperiment (1)\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7f6aa82f-7325-4c15-9b7c-15212b42cead\" name=\"Changes\" comment=\"\" />\r\n      <created>1659648388576</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1659648388576</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Added first\">\r\n      <created>1659650152753</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1659650152753</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added workplace\">\r\n      <created>1659903183457</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1659903183457</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added workplace\">\r\n      <created>1659903206512</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1659903206512</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Added workplace\">\r\n      <created>1659943917450</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1659943917450</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Added all\">\r\n      <created>1659995372897</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1659995372897</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT\" value=\"false\" />\r\n    <MESSAGE value=\"Added first\" />\r\n    <MESSAGE value=\"Added workplace\" />\r\n    <MESSAGE value=\"Added all\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added all\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 80725b995e00d49a6ed8d493a6f3e54c1d01377d)
++++ b/.idea/workspace.xml	(date 1660165971482)
+@@ -5,7 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added all">
++      <change afterPath="$PROJECT_DIR$/src/test/java/Experiments/xx.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/MyCode/FirstAttempt.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/MyCode/ff.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,7 +27,28 @@
+         <task path="$PROJECT_DIR$">
+           <activation />
+         </task>
+-        <projects_view />
++        <projects_view>
++          <tree_state>
++            <expand>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="SelenideSpecial" type="f1a62948:ProjectNode" />
++              </path>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="SelenideSpecial" type="f1a62948:ProjectNode" />
++                <item name="Tasks" type="e4a08cd1:TasksNode" />
++              </path>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="SelenideSpecial" type="f1a62948:ProjectNode" />
++                <item name="Tasks" type="e4a08cd1:TasksNode" />
++                <item name="verification" type="c8890929:TasksNode$1" />
++              </path>
++            </expand>
++            <select />
++          </tree_state>
++        </projects_view>
+       </state>
+     </system>
+   </component>
+@@ -55,45 +80,44 @@
+       <recent name="FromLecture" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.Faker1">
+-    <configuration name="Faker1$Faker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Experiments.Faker1$Faker" />
+-      <module name="SelenideSpecial.test" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Experiments.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
++  <component name="RunManager" selected="Gradle.xx">
++    <configuration name="FirstAttempt (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++      <ExternalSystemSettings>
++        <option name="executionName" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="externalSystemIdString" value="GRADLE" />
++        <option name="scriptParameters" value="--stacktrace" />
++        <option name="taskDescriptions">
++          <list />
++        </option>
++        <option name="taskNames">
++          <list>
++            <option value=":test" />
++            <option value="--tests" />
++            <option value="&quot;MyCode.FirstAttempt&quot;" />
++          </list>
++        </option>
++        <option name="vmOptions" />
++      </ExternalSystemSettings>
++      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
++      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
++      <DebugAllEnabled>false</DebugAllEnabled>
++      <method v="2" />
+     </configuration>
+-    <configuration name="Faker1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Experiments.Faker1" />
+-      <module name="SelenideSpecial.test" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Experiments.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Faker" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="FirstAttempt.findSelenide (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="--tests &quot;Experiments.Faker1$Faker&quot;" />
++        <option name="scriptParameters" value="" />
+         <option name="taskDescriptions">
+           <list />
+         </option>
+         <option name="taskNames">
+           <list>
+             <option value=":test" />
++            <option value="--tests" />
++            <option value="&quot;MyCode.FirstAttempt.findSelenide&quot;" />
+           </list>
+         </option>
+         <option name="vmOptions" />
+@@ -103,7 +127,47 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Faker.firstExperiment (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="SelenideSpecial [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++      <ExternalSystemSettings>
++        <option name="executionName" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="externalSystemIdString" value="GRADLE" />
++        <option name="scriptParameters" />
++        <option name="taskDescriptions">
++          <list />
++        </option>
++        <option name="taskNames">
++          <list>
++            <option value="test" />
++          </list>
++        </option>
++        <option name="vmOptions" />
++      </ExternalSystemSettings>
++      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
++      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
++      <DebugAllEnabled>false</DebugAllEnabled>
++      <method v="2" />
++    </configuration>
++    <configuration name="SelenideSpecial" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++      <ExternalSystemSettings>
++        <option name="executionName" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="externalSystemIdString" value="GRADLE" />
++        <option name="scriptParameters" />
++        <option name="taskDescriptions">
++          <list />
++        </option>
++        <option name="taskNames">
++          <list />
++        </option>
++        <option name="vmOptions" />
++      </ExternalSystemSettings>
++      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
++      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
++      <DebugAllEnabled>false</DebugAllEnabled>
++      <method v="2" />
++    </configuration>
++    <configuration name="xx" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+@@ -116,7 +180,7 @@
+           <list>
+             <option value=":test" />
+             <option value="--tests" />
+-            <option value="&quot;Experiments.Faker.firstExperiment&quot;" />
++            <option value="&quot;Experiments.xx&quot;" />
+           </list>
+         </option>
+         <option name="vmOptions" />
+@@ -128,11 +192,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.Faker1" />
+-        <item itemvalue="Gradle.Faker" />
+-        <item itemvalue="Application.Faker1$Faker" />
+-        <item itemvalue="Gradle.Faker" />
+-        <item itemvalue="Gradle.Faker.firstExperiment (1)" />
++        <item itemvalue="Gradle.xx" />
++        <item itemvalue="Gradle.FirstAttempt.findSelenide (1)" />
++        <item itemvalue="Gradle.FirstAttempt (1)" />
++        <item itemvalue="Gradle.SelenideSpecial" />
++        <item itemvalue="Gradle.SelenideSpecial [test]" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -180,7 +244,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1659995372897</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="Added all">
++      <created>1660072808785</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1660072808785</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+Index: src/test/java/MyCode/FirstAttempt.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/MyCode/FirstAttempt.java b/src/test/java/MyCode/FirstAttempt.java
+new file mode 100644
+--- /dev/null	(date 1660080898131)
++++ b/src/test/java/MyCode/FirstAttempt.java	(date 1660080898131)
+@@ -0,0 +1,19 @@
++package MyCode;
++
++import com.codeborne.selenide.Selenide;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.Test;
++
++public class FirstAttempt{
++
++    @BeforeAll
++    static void preparation() {
++        Selenide.open("https://github.com/");
++    }
++
++   @Test
++    public void findSelenide() {
++        Selenide.open("https://github.com/");
++
++    }
++}
+Index: src/test/java/Experiments/xx.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Experiments/xx.java b/src/test/java/Experiments/xx.java
+new file mode 100644
+--- /dev/null	(date 1660080970420)
++++ b/src/test/java/Experiments/xx.java	(date 1660080970420)
+@@ -0,0 +1,18 @@
++package Experiments;
++
++import com.codeborne.selenide.Selenide;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.Test;
++
++public class xx {
++    @BeforeAll
++    static void preparation() {
++        Selenide.open("https://github.com/");
++    }
++
++    @Test
++    public void findSelenide() {
++        Selenide.open("https://github.com/");
++
++    }
++}
