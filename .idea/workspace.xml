@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added workplace">
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added improved cycle for">
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyCode/FirstAttempt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Faker1">
+  <component name="RunManager" selected="Gradle.FirstAttempt">
     <configuration name="Faker1$Faker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Experiments.Faker1$Faker" />
       <module name="SelenideSpecial.test" />
@@ -127,13 +127,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FirstAttempt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MyCode.FirstAttempt&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FirstAttempt" />
         <item itemvalue="Application.Faker1" />
         <item itemvalue="Gradle.Faker" />
         <item itemvalue="Application.Faker1$Faker" />
         <item itemvalue="Gradle.Faker" />
-        <item itemvalue="Gradle.Faker.firstExperiment (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659943917450</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added improved cycle for">
+      <created>1659978143081</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659978143081</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +221,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Added first" />
     <MESSAGE value="Added workplace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added workplace" />
+    <MESSAGE value="Added improved cycle for" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added improved cycle for" />
   </component>
 </project>
