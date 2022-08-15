@@ -1,4 +1,4 @@
-package com.MyCode;
+package com.FromLecture;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;

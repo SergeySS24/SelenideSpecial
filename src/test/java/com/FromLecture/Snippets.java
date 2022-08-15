@@ -1,4 +1,4 @@
-package FromLecture;
+package com.FromLecture;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.Keys;
