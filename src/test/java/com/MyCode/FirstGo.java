@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
+//CHECKING JUNIT
+
 public class FirstGo {
     @BeforeAll
     public static void preparation() {
@@ -19,13 +21,11 @@ public class FirstGo {
     void headerVerification() {
         Selenide.open("https://github.com/");
         $(".header-search-input").setValue("junit").pressEnter();
-        //$(".repo-list").$(".repo-list-item").shouldHave(Condition.text("junit-team/junit4")).click();
         $$(".repo-list").first().$(".v-align-middle").click();
-        //$$("ul repo-list").find(Condition.value("li repo-list-item")).
-        //$(".repository-container-header").$("a")
-                //find(Condition.value("#repo-content-pjax-container"))
-               // .shouldHave(Condition.text("junit-team/junit4"));
-                //shouldHave(Condition.text("junit-team/junit4"));
+        //$(".repo-list").$("li.repo-list-item").$(".v-align-middle").click(); //Вариант 2
+        $("#repository-container-header").$(".wb-break-word").shouldHave(Condition.text("junit-team / junit4"));
+
+
 
     }
 }
