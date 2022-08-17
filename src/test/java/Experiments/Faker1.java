@@ -12,6 +12,7 @@ public class Faker1 {
         for (int i = 0; i < 100; i++) {
             System.out.println("" + i + ": " + faker.internet().macAddress());
         }
+
     }
 }
 
