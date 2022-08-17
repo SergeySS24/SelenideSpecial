@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added my test 1">
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added all">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Experiments/Faker2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Experiments/FakerExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_08_2022_0_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_08_2022_0_13__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,21 +67,8 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FirstGo.headerVerification (1)">
-    <configuration name="Faker1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Experiments.Faker1" />
-      <module name="SelenideSpecial.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Experiments.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckTwo.findContributor (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.FirstGo.headerVerification">
+    <configuration name="AAZZ" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -88,7 +81,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.FromLecture.CheckTwo.findContributor&quot;" />
+            <option value="&quot;com.AAA.AAZZ&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -98,7 +91,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CheckTwo.findContributor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FirstAttempt (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +104,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;FromLecture.CheckTwo.findContributor&quot;" />
+            <option value="&quot;com.MyCode.FirstAttempt&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +114,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FirstGo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FirstAttempt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +127,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.MyCode.FirstGo&quot;" />
+            <option value="&quot;MyCode.FirstAttempt&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,7 +137,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FirstGo.headerVerification (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FirstAttempt.findSelenide (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +150,28 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.MyCode.FirstGo.headerVerification&quot;" />
+            <option value="&quot;com.MyCode.FirstAttempt.findSelenide&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="FirstGo.headerVerification" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.FirstGo.headerVerification&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FirstGo.headerVerification (1)" />
-        <item itemvalue="Gradle.FirstGo" />
-        <item itemvalue="Gradle.CheckTwo.findContributor (2)" />
-        <item itemvalue="Gradle.CheckTwo.findContributor" />
-        <item itemvalue="Application.Faker1" />
+        <item itemvalue="Gradle.FirstGo.headerVerification" />
+        <item itemvalue="Gradle.FirstAttempt.findSelenide (1)" />
+        <item itemvalue="Gradle.FirstAttempt (1)" />
+        <item itemvalue="Gradle.AAZZ" />
+        <item itemvalue="Gradle.FirstAttempt" />
       </list>
     </recent_temporary>
   </component>
@@ -221,42 +235,7 @@
       <option name="project" value="LOCAL" />
       <updated>1659995372897</updated>
     </task>
-    <task id="LOCAL-00006" summary="Added resolved issue">
-      <created>1660168604142</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1660168604142</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added resolved issue">
-      <created>1660253382785</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1660253382785</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added selenide test">
-      <created>1660419778876</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1660419778876</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added selenide test 2">
-      <created>1660507109731</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1660507109731</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added my test 1">
-      <created>1660599894852</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1660599894852</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,16 +248,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Added first" />
     <MESSAGE value="Added workplace" />
     <MESSAGE value="Added all" />
-    <MESSAGE value="Added resolved issue" />
-    <MESSAGE value="Added selenide test" />
-    <MESSAGE value="Added selenide test 2" />
-    <MESSAGE value="Added my test 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added my test 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all" />
   </component>
 </project>
