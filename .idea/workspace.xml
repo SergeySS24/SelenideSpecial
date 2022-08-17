@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added all">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Experiments/Faker2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Experiments/FakerExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_08_2022_0_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_08_2022_0_13__Changes_.xml" afterDir="false" />
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added my test 2">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Experiments/Faker1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +61,7 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FirstGo.headerVerification">
+  <component name="RunManager" selected="Gradle.SecondGo.contributorSearch (1)">
     <configuration name="AAZZ" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -105,29 +99,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.MyCode.FirstAttempt&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FirstAttempt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;MyCode.FirstAttempt&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,13 +152,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SecondGo.contributorSearch (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.MyCode.SecondGo.contributorSearch&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SecondGo.contributorSearch (1)" />
         <item itemvalue="Gradle.FirstGo.headerVerification" />
         <item itemvalue="Gradle.FirstAttempt.findSelenide (1)" />
         <item itemvalue="Gradle.FirstAttempt (1)" />
         <item itemvalue="Gradle.AAZZ" />
-        <item itemvalue="Gradle.FirstAttempt" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +242,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
