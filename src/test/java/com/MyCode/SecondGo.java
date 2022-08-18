@@ -20,6 +20,9 @@ public class SecondGo {
     @Test
     void contributorSearch() {
         Selenide.open("https://github.com/junit-team/junit5");
-        $(".BorderGrid--spacious").$(".BorderGrid-row", 4).shouldHave(Condition.text("Contributors")).hover();
+        $(".BorderGrid--spacious").$(".BorderGrid-row", 4).$(".list-style-none")
+                .$(".mr-2").hover();
+        $(".Popover-message").$(".f5").shouldHave(Condition.text("sbrannen"));
+
     }
 }
