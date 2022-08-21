@@ -21,11 +21,11 @@ public class FirstGo {
     void headerVerification() {
         Selenide.open("https://github.com/");
         $(".header-search-input").setValue("junit").pressEnter();
-        //$$(".repo-list").first().$(".v-align-middle").click();
+        $$(".repo-list").first().$(".v-align-middle").click();
         //$(".repo-list").$("li.repo-list-item").$(".v-align-middle").click(); //Вариант 2
-        //$("#repository-container-header").$(".wb-break-word").shouldHave(Condition.text("junit-team / junit4"));
+        $("#repository-container-header").$(".wb-break-word").shouldHave(Condition.text("junit-team / junit4"));
 
-        $(".repo-list").$(".repo-list-item", 2).$(".v-align-middle").click();
+        //$(".repo-list").$(".repo-list-item", 2).$(".v-align-middle").click(); //Выбор другого элемента из списка используя индексы
 
 
 
