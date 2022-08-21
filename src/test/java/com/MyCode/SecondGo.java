@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.$;
 
+//SEARCH FOR JUNIT5 CONTRIBUTOR sbrannen
 
-//SEARCH FOR JUNIT5 CONTRIBUTOR
 public class SecondGo {
 
     @BeforeAll
@@ -27,7 +27,6 @@ public class SecondGo {
                 .$(".list-style-none").$(".mr-2").hover();
         $(".Popover-message").$(".f5").shouldHave(Condition.text("sbrannen"));
 
-
     }
 
     @Test
@@ -39,6 +38,19 @@ public class SecondGo {
                 .$(".mr-2").hover();
         $(".Popover-message").$(".f5").shouldHave(Condition.text("sbrannen"));
     }
+
+    //SEARCH FOR JUNIT5 CONTRIBUTOR marcphilipp
+    @Test
+    void contributorSearch3() {
+        Selenide.open("https://github.com/junit-team/junit5");
+        $(".BorderGrid--spacious").$(Selectors.byText("Contributors")).ancestor(".BorderGrid-cell")
+                .$(".mr-2", 2).hover();
+        $(".Popover-message").$(".f5").shouldHave(Condition.text("marcphilipp"));
+
+
+
+    }
+
 }
 
 
