@@ -25,10 +25,7 @@ public class CheckTwo {
         $(".Layout-sidebar").$(byText("Contributors")).ancestor("div").$$("ul li").first().hover();
         //$(".Popover-message").shouldHave(text("asolntsev"));
         $$(".Popover-message").first().shouldHave(text("asolntsev"));
-                //.findBy(text("Contributors"))
-                //.ancestor("div").$$("ul li").first().hover();
 
-                //find(text("Contributors"));
         sleep(500);
     }
 }
