@@ -61,7 +61,7 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SecondGo.contributorSearch3">
+  <component name="RunManager" selected="Gradle.SecondGo.licenseCheck">
     <configuration name="CheckTwo.findContributor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -76,27 +76,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.FromLecture.CheckTwo.findContributor&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FirstGo.headerVerification" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.FirstGo.headerVerification&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,18 +131,43 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.contributorSearch3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.contributorSearch3 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.contributorSearch3&quot;" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.MyCode.SecondGo.contributorSearch3&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SecondGo.licenseCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.MyCode.SecondGo.licenseCheck&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SecondGo.contributorSearch3" />
-        <item itemvalue="Gradle.SecondGo.contributorSearch3" />
+        <item itemvalue="Gradle.SecondGo.licenseCheck" />
+        <item itemvalue="Gradle.SecondGo.contributorSearch3 (1)" />
+        <item itemvalue="Gradle.SecondGo.contributorSearch3 (1)" />
         <item itemvalue="Gradle.CheckTwo.findContributor" />
         <item itemvalue="Gradle.SecondGo.contributorSearch2" />
-        <item itemvalue="Gradle.SecondGo.contributorSearch1" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +265,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />

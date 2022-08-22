@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 //SEARCH FOR JUNIT5 CONTRIBUTOR sbrannen
 
@@ -44,14 +45,24 @@ public class SecondGo {
     @Test
     void contributorSearch3() {
         Selenide.open("https://github.com/junit-team/junit5");
-        //$(".BorderGrid--spacious").$(byText("Contributors")).ancestor(".BorderGrid-cell")
-               // .$(".mr-2").$(byTagAndText("alt","@marcphilipp")).hover();
-        //$(".Popover-message").$(".f5").shouldHave(Condition.text("marcphilipp"));
+        $(".BorderGrid--spacious").$(byText("Contributors")).ancestor(".BorderGrid-cell")
+                .$(".mr-2", 2).hover();
+        $(".Popover-message").$(".f5").shouldHave(Condition.text("marcphilipp"));
 
-        $(".BorderGrid--spacious").$(".BorderGrid-row", 4).$(".list-style-none").$(".mr-2")
-                .find(byValue("@marcphilipp")).hover();
+        //$(".BorderGrid--spacious").$(".BorderGrid-row", 4).$(".list-style-none")
+                //.$(".mr-2").$(".data-hovercard-url").$(byValue("/users/marcphilipp/hovercard")).hover();
+    }
 
+    //JUNIT5 - PRESENCE OF LICENSE.MD
+    @Test
+    void licenseCheck() {
+        Selenide.open("https://github.com/junit-team/junit5");
+        //$(".Layout-main").$(".Details-content--hidden-not-important").$(".Box-row", 34).$(".js-navigation-open")
+                //.shouldHave(Condition.text("LICENSE.md"));
 
+          //$$(".js-details-container").get(35).$(".js-navigation-open").shouldHave(Condition.text("LICENSE.md"));
+
+        $(".Layout-main").$(byText("LICENSE.md")).ancestor(".js-navigation-open").hover();
 
     }
 
