@@ -25,7 +25,8 @@ public class FirstGo {
         //$(".repo-list").$("li.repo-list-item").$(".v-align-middle").click(); //Вариант 2
         //$("#repository-container-header").$(".wb-break-word").shouldHave(Condition.text("junit-team / junit4"));
 
-        $(".repo-list").$(".repo-list-item", 2).$(".v-align-middle").click();
+       // $(".repo-list").$(".repo-list-item", 2).$(".v-align-middle").click();
+        $(".repo-list").$(".repo-list-item", 3).$(".v-align-middle").click();
 
 
 
