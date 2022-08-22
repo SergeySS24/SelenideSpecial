@@ -7,6 +7,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 
 //SEARCH FOR JUNIT5 CONTRIBUTOR sbrannen
@@ -23,7 +24,7 @@ public class SecondGo {
 
         Selenide.open("https://github.com/junit-team/junit5");
 
-        $(".BorderGrid--spacious").$(Selectors.byText("Contributors")).ancestor("div")
+        $(".BorderGrid--spacious").$(byText("Contributors")).ancestor("div")
                 .$(".list-style-none").$(".mr-2").hover();
         $(".Popover-message").$(".f5").shouldHave(Condition.text("sbrannen"));
 
@@ -43,9 +44,12 @@ public class SecondGo {
     @Test
     void contributorSearch3() {
         Selenide.open("https://github.com/junit-team/junit5");
-        $(".BorderGrid--spacious").$(Selectors.byText("Contributors")).ancestor(".BorderGrid-cell")
-                .$(".mr-2", 2).hover();
-        $(".Popover-message").$(".f5").shouldHave(Condition.text("marcphilipp"));
+        //$(".BorderGrid--spacious").$(byText("Contributors")).ancestor(".BorderGrid-cell")
+               // .$(".mr-2").$(byTagAndText("alt","@marcphilipp")).hover();
+        //$(".Popover-message").$(".f5").shouldHave(Condition.text("marcphilipp"));
+
+        $(".BorderGrid--spacious").$(".BorderGrid-row", 4).$(".list-style-none").$(".mr-2")
+                .find(byValue("@marcphilipp")).hover();
 
 
 
