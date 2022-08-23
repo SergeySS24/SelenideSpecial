@@ -62,7 +62,9 @@ public class SecondGo {
 
           //$$(".js-details-container").get(35).$(".js-navigation-open").shouldHave(Condition.text("LICENSE.md"));
 
-        $(".Layout-main").$(byText("LICENSE.md")).ancestor(".js-navigation-open").hover();
+        //$$(".Layout-main").first().shouldHave(Condition.text("github")); //УСПЕШНЫЙ ТЕСТ!!!
+        $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
+                .shouldHave(Condition.text("LICENSE.md"));
 
     }
 

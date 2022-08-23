@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added final examples from lecture">
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added licence.md search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" afterDir="false" />
     </list>
@@ -61,7 +61,7 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SecondGo.licenseCheck">
+  <component name="RunManager" selected="Gradle.SecondGo.licenseCheck (1)">
     <configuration name="CheckTwo.findContributor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,7 +154,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.licenseCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.licenseCheck (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -179,7 +179,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SecondGo.licenseCheck" />
+        <item itemvalue="Gradle.SecondGo.licenseCheck (1)" />
         <item itemvalue="Gradle.SecondGo.contributorSearch3 (1)" />
         <item itemvalue="Gradle.SecondGo.contributorSearch3 (1)" />
         <item itemvalue="Gradle.CheckTwo.findContributor" />
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661107953509</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added licence.md search">
+      <created>1661204373791</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661204373791</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +281,7 @@
     <MESSAGE value="Added secondGo" />
     <MESSAGE value="Added contributor" />
     <MESSAGE value="Added final examples from lecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added final examples from lecture" />
+    <MESSAGE value="Added licence.md search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added licence.md search" />
   </component>
 </project>
