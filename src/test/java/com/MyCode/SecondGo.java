@@ -62,9 +62,15 @@ public class SecondGo {
 
           //$$(".js-details-container").get(35).$(".js-navigation-open").shouldHave(Condition.text("LICENSE.md"));
 
+            $$(".BorderGrid--spacious").findBy(Condition.value("marcphilipp")).shouldHave(Condition.value("marcphilipp"));
+
         //$$(".Layout-main").first().shouldHave(Condition.text("github")); //УСПЕШНЫЙ ТЕСТ!!!
-        $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
-                .shouldHave(Condition.text("LICENSE.md"));
+       // $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
+               // .shouldHave(Condition.text("LICENSE.md"));
+
+       // $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
+                //.shouldBe(Condition.visible);
+
 
     }
 
