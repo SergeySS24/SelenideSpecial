@@ -1,9 +1,6 @@
 package com.MyCode;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selectors;
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -49,30 +46,45 @@ public class SecondGo {
                 .$(".mr-2", 2).hover();
         $(".Popover-message").$(".f5").shouldHave(Condition.text("marcphilipp"));
 
-        //$(".BorderGrid--spacious").$(".BorderGrid-row", 4).$(".list-style-none")
-                //.$(".mr-2").$(".data-hovercard-url").$(byValue("/users/marcphilipp/hovercard")).hover();
     }
 
-    //JUNIT5 - PRESENCE OF LICENSE.MD
+    //JUNIT5 - SEARCHING LICENSE.MD
     @Test
     void licenseCheck() {
         Selenide.open("https://github.com/junit-team/junit5");
-        //$(".Layout-main").$(".Details-content--hidden-not-important").$(".Box-row", 34).$(".js-navigation-open")
+
+        //$$(".Layout-main").first().shouldHave(Condition.text("github")); //на поиск первого элемента в списке
+
+        $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
+                .shouldBe(Condition.visible);
+
+        //$$(".Layout-main").findBy(Condition.text("LICENSE.md"))  //вариант №2
                 //.shouldHave(Condition.text("LICENSE.md"));
-
-          //$$(".js-details-container").get(35).$(".js-navigation-open").shouldHave(Condition.text("LICENSE.md"));
-
-            $$(".BorderGrid--spacious").findBy(Condition.value("marcphilipp")).shouldHave(Condition.value("marcphilipp"));
-
-        //$$(".Layout-main").first().shouldHave(Condition.text("github")); //УСПЕШНЫЙ ТЕСТ!!!
-       // $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
-               // .shouldHave(Condition.text("LICENSE.md"));
-
-       // $$(".Layout-main").findBy(Condition.text("LICENSE.md"))
-                //.shouldBe(Condition.visible);
-
-
     }
+
+    //JUNIT5 - SEARCHING LICENSE.MD - RELEASE 5.9
+    @Test
+    void releaseCheck() {
+        Selenide.open("https://github.com/junit-team/junit5");
+        $$(".Layout-main").findBy(Condition.text("Release 5.9")).shouldBe(Condition.visible);
+
+        //$$(".Layout-main").filterBy(Condition.text("LICENSE.md"))
+        // .shouldHave(CollectionCondition.texts("Release 5.9")); //вариант №2
+        
+        //$$(".Layout-main").shouldHave(CollectionCondition.texts("Release 5.9")); //Вариант №3
+    }
+
+    //JUNIT5 - Languages - Java 97.5%
+    @Test
+    void languageCheck() {
+        Selenide.open("https://github.com/junit-team/junit5");
+        $(".Layout-sidebar").$(".BorderGrid-row",5).shouldHave(Condition.text("97.5%"));
+
+        //вариант №2
+        //$$(".Layout-sidebar").filterBy(Condition.text("Languages")).shouldHave(CollectionCondition.texts("97.5%"));
+    }
+
+
 
 }
 
