@@ -84,6 +84,20 @@ public class SecondGo {
         //$$(".Layout-sidebar").filterBy(Condition.text("Languages")).shouldHave(CollectionCondition.texts("97.5%"));
     }
 
+    //JUNIT5 - Gradle Enterprise - link
+    @Test
+    void linkCheck() {
+        Selenide.open("https://github.com/junit-team/junit5");
+        //$$(".entry-content").filterBy(Condition.text("Gradle Enterprise"))
+       //         .shouldHave(CollectionCondition.texts("Gradle Enterprise"));
+
+        $(".Layout-main").$(".entry-content").$(byText("Gradle Enterprise")).sibling(2).hover();
+                //.shouldHave(Condition.href("https://gradle.com/"));
+
+                //.shouldHave(Condition.href("https://gradle.com/"));
+                //;"https://gradle.com/"
+    }
+
 
 
 }
