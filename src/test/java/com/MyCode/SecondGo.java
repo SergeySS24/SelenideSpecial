@@ -91,14 +91,22 @@ public class SecondGo {
         //$$(".entry-content").filterBy(Condition.text("Gradle Enterprise"))
        //         .shouldHave(CollectionCondition.texts("Gradle Enterprise"));
 
-        $(".Layout-main").$(".entry-content").$(byText("Gradle Enterprise")).sibling(2).hover();
-                //.shouldHave(Condition.href("https://gradle.com/"));
+        //$(".Layout-main").$(".entry-content").$(byText("JUnit 5 utilizes"))
+                //.shouldHave(Condition.text("JUnit 5 utilizes"));
 
-                //.shouldHave(Condition.href("https://gradle.com/"));
-                //;"https://gradle.com/"
+        $(".Layout-main").$(".entry-content").$(byLinkText("Gradle Enterprise"))
+                .shouldHave(Condition.href("https://gradle.com/"));
     }
 
+    //JUNIT5 - gradlew clean publishToMavenLocale - code
+    @Test
+    void codeSearch() {
+        Selenide.open("https://github.com/junit-team/junit5");
+        $(".Layout-main").$(".entry-content").$(byAttribute("code", "gradlew clean publishToMavenLocal")).hover();
 
+
+                //.shouldHave(Condition.text("following command"));
+    }
 
 }
 
