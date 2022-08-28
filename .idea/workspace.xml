@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added licence.md search - link">
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added finished link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" afterDir="false" />
     </list>
@@ -61,8 +61,8 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SecondGo.codeSearch">
-    <configuration name="SecondGo.codeSearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SecondGo.codeSearch (1)">
+    <configuration name="SecondGo.codeSearch (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +175,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SecondGo.codeSearch" />
+        <item itemvalue="Gradle.SecondGo.codeSearch (1)" />
         <item itemvalue="Gradle.SecondGo.linkCheck (1)" />
         <item itemvalue="Gradle.SecondGo.languageCheck (1)" />
         <item itemvalue="Gradle.SecondGo.releaseCheck" />
@@ -283,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661465097517</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added finished link">
+      <created>1661550813660</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661550813660</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,6 +317,7 @@
     <MESSAGE value="Added licence.md search - resolved visible" />
     <MESSAGE value="Added licence.md search - useless" />
     <MESSAGE value="Added licence.md search - link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added licence.md search - link" />
+    <MESSAGE value="Added finished link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added finished link" />
   </component>
 </project>

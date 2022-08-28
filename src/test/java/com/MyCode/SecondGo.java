@@ -4,9 +4,10 @@ import com.codeborne.selenide.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.attribute;
+import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.*;
 
 //SEARCH FOR JUNIT5 CONTRIBUTOR sbrannen
 
@@ -88,24 +89,38 @@ public class SecondGo {
     @Test
     void linkCheck() {
         Selenide.open("https://github.com/junit-team/junit5");
-        //$$(".entry-content").filterBy(Condition.text("Gradle Enterprise"))
-       //         .shouldHave(CollectionCondition.texts("Gradle Enterprise"));
-
-        //$(".Layout-main").$(".entry-content").$(byText("JUnit 5 utilizes"))
-                //.shouldHave(Condition.text("JUnit 5 utilizes"));
 
         $(".Layout-main").$(".entry-content").$(byLinkText("Gradle Enterprise"))
-                .shouldHave(Condition.href("https://gradle.com/"));
+          .shouldHave(Condition.href("https://gradle.com/"));
+
+
+        //$$(".entry-content").filterBy(Condition.text("Gradle Enterprise"))   //Найти словосочетаение
+       //         .shouldHave(CollectionCondition.texts("Gradle Enterprise"));
+
+        //$(".Layout-main").$(".entry-content").$(byText("JUnit 5 utilizes"))  //Найти словосчетание вариант №2
+        //        .shouldHave(Condition.text("JUnit 5 utilizes"));
     }
 
     //JUNIT5 - gradlew clean publishToMavenLocale - code
     @Test
     void codeSearch() {
         Selenide.open("https://github.com/junit-team/junit5");
-        $(".Layout-main").$(".entry-content").$(byAttribute("code", "gradlew clean publishToMavenLocal")).hover();
+
+        //$(".Layout-main").$(".entry-content")
+                //.$(byAttribute("code","gradlew clean publishToMavenLocal")).hover();
+                //.$(byAttribute("code", "gradlew clean publishToMavenLocal")).hover();
 
 
-                //.shouldHave(Condition.text("following command"));
+        //$$(".entry-content").filterBy(Condition.text("gradlew clean publishToMavenLocal"))
+                 //.shouldHave(attribute("disabled"));
+
+
+        $(".Layout-main").$(".entry-content").$(byText("gradlew clean publishToMavenLocal"))
+                .shouldHave(value("<code>gradlew clean publishToMavenLocal</code>"));
+
+                //<code>gradlew clean publishToMavenLocal</code>
+
+
     }
 
 }
