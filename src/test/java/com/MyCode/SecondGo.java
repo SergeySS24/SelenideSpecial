@@ -70,7 +70,7 @@ public class SecondGo {
 
         //$$(".Layout-main").filterBy(Condition.text("LICENSE.md"))
         // .shouldHave(CollectionCondition.texts("Release 5.9")); //вариант №2
-        
+
         //$$(".Layout-main").shouldHave(CollectionCondition.texts("Release 5.9")); //Вариант №3
     }
 
