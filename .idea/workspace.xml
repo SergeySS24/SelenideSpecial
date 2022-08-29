@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added new tests - java" />
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added finished link">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/SecondGo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +61,30 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SecondGo.languageCheck">
+  <component name="RunManager" selected="Gradle.SecondGo.codeSearch (1)">
+    <configuration name="SecondGo.codeSearch (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.MyCode.SecondGo.codeSearch&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SecondGo.contributorSearch3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -80,28 +106,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.languageCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.languageCheck&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SecondGo.licenseCheck (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.languageCheck (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -114,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.MyCode.SecondGo.licenseCheck&quot;" />
+            <option value="&quot;com.MyCode.SecondGo.languageCheck&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,18 +129,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.licenseCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.linkCheck (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.licenseCheck&quot;" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.MyCode.SecondGo.linkCheck&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SecondGo.languageCheck" />
+        <item itemvalue="Gradle.SecondGo.codeSearch (1)" />
+        <item itemvalue="Gradle.SecondGo.linkCheck (1)" />
+        <item itemvalue="Gradle.SecondGo.languageCheck (1)" />
         <item itemvalue="Gradle.SecondGo.releaseCheck" />
         <item itemvalue="Gradle.SecondGo.contributorSearch3" />
-        <item itemvalue="Gradle.SecondGo.licenseCheck" />
-        <item itemvalue="Gradle.SecondGo.licenseCheck (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -255,14 +262,35 @@
       <option name="project" value="LOCAL" />
       <updated>1661292648485</updated>
     </task>
-    <task id="LOCAL-00011" summary="Added new tests - java">
-      <created>1661446824728</created>
+    <task id="LOCAL-00011" summary="Added licence.md search - resolved visible">
+      <created>1661375550706</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1661446824728</updated>
+      <updated>1661375550706</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added licence.md search - useless">
+      <created>1661458961913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661458961913</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added licence.md search - link">
+      <created>1661465097517</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661465097517</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added finished link">
+      <created>1661550813660</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661550813660</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +303,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -287,7 +314,10 @@
     <MESSAGE value="Added final examples from lecture" />
     <MESSAGE value="Added licence.md search" />
     <MESSAGE value="Added licence.md search - resolved" />
-    <MESSAGE value="Added new tests - java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new tests - java" />
+    <MESSAGE value="Added licence.md search - resolved visible" />
+    <MESSAGE value="Added licence.md search - useless" />
+    <MESSAGE value="Added licence.md search - link" />
+    <MESSAGE value="Added finished link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added finished link" />
   </component>
 </project>
