@@ -61,7 +61,28 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SecondGo.codeSearch (1)">
+  <component name="RunManager" selected="Gradle.SecondGo.buttonCodeCheck">
+    <configuration name="SecondGo.buttonCodeCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.buttonCodeCheck&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SecondGo.codeSearch (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -85,12 +106,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.contributorSearch3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.codeSearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.contributorSearch3&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.codeSearch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -106,20 +127,18 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.languageCheck (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.elementSearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.elementSearch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.MyCode.SecondGo.languageCheck&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -129,35 +148,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.linkCheck (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.pricingSearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.MyCode.SecondGo.linkCheck&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SecondGo.releaseCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.releaseCheck&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.pricingSearch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -175,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SecondGo.buttonCodeCheck" />
+        <item itemvalue="Gradle.SecondGo.pricingSearch" />
+        <item itemvalue="Gradle.SecondGo.elementSearch" />
+        <item itemvalue="Gradle.SecondGo.codeSearch" />
         <item itemvalue="Gradle.SecondGo.codeSearch (1)" />
-        <item itemvalue="Gradle.SecondGo.linkCheck (1)" />
-        <item itemvalue="Gradle.SecondGo.languageCheck (1)" />
-        <item itemvalue="Gradle.SecondGo.releaseCheck" />
-        <item itemvalue="Gradle.SecondGo.contributorSearch3" />
       </list>
     </recent_temporary>
   </component>
@@ -303,6 +299,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
