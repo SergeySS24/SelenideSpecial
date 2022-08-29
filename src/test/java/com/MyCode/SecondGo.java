@@ -139,9 +139,11 @@ public class SecondGo {
     void buttonCodeCheck() {
         Selenide.open("https://github.com/junit-team/junit5");
 
-        //$(".Layout-main").$(".file-navigation").$$(".position-relative").shouldBe(checked);
+        $(".Layout-main").$(".file-navigation").$(".position-relative", 1)
+                .shouldHave(text("Code")).click();
 
-        $(".Layout-main").$(".file-navigation").$(".position-relative").click();
+        //$(".Layout-main").$(".file-navigation").$(".position-relative", 1)
+                //.shouldHave(text("Code"))
     }
 }
 
