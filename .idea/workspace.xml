@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added button">
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added mouse offset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +61,13 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SecondGo.buttonCodeCheck">
-    <configuration name="SecondGo.buttonCodeCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.FirstGo.checkMouseClick">
+    <configuration name="FirstGo.checkMouseClick" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.buttonCodeCheck&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.FirstGo.checkMouseClick&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -82,20 +83,18 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.codeSearch (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.buttonCodeCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.buttonCodeCheck&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.MyCode.SecondGo.codeSearch&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FirstGo.checkMouseClick" />
         <item itemvalue="Gradle.SecondGo.buttonCodeCheck" />
         <item itemvalue="Gradle.SecondGo.pricingSearch" />
         <item itemvalue="Gradle.SecondGo.elementSearch" />
         <item itemvalue="Gradle.SecondGo.codeSearch" />
-        <item itemvalue="Gradle.SecondGo.codeSearch (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -299,12 +298,12 @@
       <option name="project" value="LOCAL" />
       <updated>1661806398915</updated>
     </task>
-    <task id="LOCAL-00017" summary="Added button">
-      <created>1661808564264</created>
+    <task id="LOCAL-00017" summary="Added mouse offset">
+      <created>1662394834033</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1661808564264</updated>
+      <updated>1662394834033</updated>
     </task>
     <option name="localTasksCounter" value="18" />
     <servers />
@@ -319,6 +318,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -336,7 +336,7 @@
     <MESSAGE value="Added finished link" />
     <MESSAGE value="Added tried to complete code" />
     <MESSAGE value="Added useless branch" />
-    <MESSAGE value="Added button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button" />
+    <MESSAGE value="Added mouse offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mouse offset" />
   </component>
 </project>
