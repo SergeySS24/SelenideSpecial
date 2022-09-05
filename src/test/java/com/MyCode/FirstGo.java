@@ -6,8 +6,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.*;
 
 //CHECKING JUNIT
 
@@ -15,7 +14,9 @@ public class FirstGo {
     @BeforeAll
     public static void preparation() {
         Configuration.holdBrowserOpen = true;
+        Configuration.browserSize = "1920x1080";
     }
+
 
     @Test
     void headerVerification() {
@@ -27,7 +28,13 @@ public class FirstGo {
 
         //$(".repo-list").$(".repo-list-item", 2).$(".v-align-middle").click(); //Выбор другого элемента из списка используя индексы
 
+    }
 
+    @Test
+    void checkMouseClick() {
+        Selenide.open("https://ru.shein.com/Home");
+        actions().moveByOffset(390, 110).click().perform();
 
     }
+
 }
