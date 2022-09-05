@@ -33,7 +33,7 @@ public class FirstGo {
     @Test
     void checkMouseClick() {
         Selenide.open("https://ru.shein.com/Home");
-        actions().moveByOffset(390, 110).click().perform();
+        actions().moveByOffset(323, 111).click().perform();
 
     }
 
