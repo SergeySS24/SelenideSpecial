@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added useless branch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyCode/FirstGo.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added useless branch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662394834033</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added useless branch">
+      <created>1662416348697</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662416348697</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,8 +340,8 @@
     <MESSAGE value="Added licence.md search - link" />
     <MESSAGE value="Added finished link" />
     <MESSAGE value="Added tried to complete code" />
-    <MESSAGE value="Added useless branch" />
     <MESSAGE value="Added mouse offset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added mouse offset" />
+    <MESSAGE value="Added useless branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added useless branch" />
   </component>
 </project>
