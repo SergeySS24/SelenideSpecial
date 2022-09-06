@@ -46,7 +46,7 @@ public class FirstGo {
        // actions().moveByOffset(400, 200).click().perform(); //каталог
         //actions().moveByOffset(320, 200).click().perform(); //каталог левый край
        // actions().moveByOffset(700, 190/205).click().perform(); //хиты продаж
-       // actions().moveByOffset(750, 110/115).click().perform(); //строка каталога
+        actions().moveByOffset(750, 82).click().perform(); //строка каталога верхний край
         //actions().moveByOffset(730, 15).click().perform(); //мой заказ
 
     }
