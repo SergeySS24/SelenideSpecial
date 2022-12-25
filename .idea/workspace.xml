@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f6aa82f-7325-4c15-9b7c-15212b42cead" name="Changes" comment="Added useless branch">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/MyTrainingCode/TrainingCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +61,7 @@
       <recent name="FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FirstGo.checkMouseClick2 (1)">
+  <component name="RunManager" selected="Gradle.SecondGo.contributorSearch3">
     <configuration name="FirstGo.checkMouseClick" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -126,18 +127,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SecondGo.elementSearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SecondGo.contributorSearch3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.MyCode.SecondGo.elementSearch&quot;" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.MyCode.SecondGo.contributorSearch3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SecondGo.contributorSearch3" />
         <item itemvalue="Gradle.FirstGo.checkMouseClick2 (1)" />
         <item itemvalue="Gradle.FirstGo.checkMouseClick" />
         <item itemvalue="Gradle.SecondGo.buttonCodeCheck" />
         <item itemvalue="Gradle.SecondGo.pricingSearch" />
-        <item itemvalue="Gradle.SecondGo.elementSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662500711680</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added useless branch">
+      <created>1662580530447</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1662580530447</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
